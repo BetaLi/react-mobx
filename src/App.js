@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import {observer} from 'mobx-react';
 import {observable, computed, action, autorun} from 'mobx';
+import Alert from 'react-icons/lib/go/alert';
+
 
 class App extends Component {
 
@@ -21,7 +23,7 @@ class App extends Component {
         });
         age.set(-10);
         return (
-            <div>See result at console.</div>
+            <div style={{fontSize:'30px'}}><Alert size={50} color={'red'}/>See result at console.</div>
         );
     }
 
